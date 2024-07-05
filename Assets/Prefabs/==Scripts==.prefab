@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9197416172425919079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7736145764966975825}
+  - component: {fileID: 4249087462463040947}
+  - component: {fileID: 6486644390081417188}
+  - component: {fileID: 8913302081906397876}
+  - component: {fileID: 221652920698307848}
+  m_Layer: 0
+  m_Name: ==Scripts==
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7736145764966975825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197416172425919079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.958761, y: -5.110702, z: -48.950474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4249087462463040947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197416172425919079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f0fc8bf6b872eb43836c3fb9ce46281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputController: {fileID: 6486644390081417188}
+  carMovementController: {fileID: 0}
+  _UIController: {fileID: 8913302081906397876}
+  Score: 0
+--- !u!114 &6486644390081417188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197416172425919079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13994bba85306a842b64e83354c44a5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carMovementController: {fileID: 0}
+  IsActive: 0
+  joystick: {fileID: 0}
+--- !u!114 &8913302081906397876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197416172425919079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ae7385e14d396442a2aef414be82ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverWindow: {fileID: 0}
+  FinishWindow: {fileID: 0}
+  scoreValuesText:
+  - {fileID: 0}
+  - {fileID: 0}
+  score: {fileID: 0}
+--- !u!114 &221652920698307848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197416172425919079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35f3b2423d0cdf49a4dd674d1ab9128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
