@@ -142,17 +142,6 @@ public class CarMovementController : MonoBehaviour
             HandBrake();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape) && !MenuWindowState)
-        {
-            MenuWindowState = true;
-            _UIController.GameOverShow(0);
-        }
-        if (Input.GetKeyDown(KeyCode.Escape) && MenuWindowState)
-        {
-            MenuWindowState = false;
-            _UIController.GameOverHide();
-        }
-
         HandledDriftData();
 }
 
@@ -183,6 +172,21 @@ public class CarMovementController : MonoBehaviour
 
     public static void HandBrakeEnable() { HandBrakeState = true; }
     public static void HandBrakeDisable() { HandBrakeState = false; }
+
+    public void ToMenu()
+    {
+        if (MenuWindowState == false) 
+        { 
+            MenuWindowState = true;
+            _UIController.GameOverShow(0); 
+        }
+        else
+        {
+            MenuWindowState = false;
+            _UIController.GameOverHide();
+        }
+        
+    }
 
     public void HandBrake()
     {
