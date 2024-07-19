@@ -29,10 +29,11 @@ public class RaceLoop : MonoBehaviour
     {
         _UIController.FinishHide();
         _UIController.GameOverHide();
-        StartRace();
+
+        _UIController.CountDown(this);
     }
 
-    private void StartRace()
+    public void StartRace()
     {
         inputController.IsActive = true;
         carMovementController.IsActive = true;

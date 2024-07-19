@@ -84,10 +84,10 @@ public class InputController : MonoBehaviour
         {
             float horizontalForce;
             float verticalForce;
-            //horizontalForce = Input.GetAxis("Horizontal");
-            //verticalForce = Input.GetAxis("Vertical");
-            horizontalForce = HorizontalAxis;
-            verticalForce = VerticalAxis;
+            horizontalForce = Input.GetAxis("Horizontal");
+            verticalForce = Input.GetAxis("Vertical");
+            //horizontalForce = HorizontalAxis;
+            //verticalForce = VerticalAxis;
             //Debug.Log("H: " + horizontalForce + "V: " + verticalForce);
 
             carMovementController.UpdateInputAxis(horizontalForce, verticalForce);
